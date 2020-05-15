@@ -1,0 +1,43 @@
+<html>
+<meta charset="utf-8">
+<title>
+Книжная полка
+</title>
+<style>
+   .inser {
+    width: 200px;	height: 20px; 
+    outline: 2px solid #000; 
+    background: #fff;
+   }
+      .book {
+    width: 200px;	height: 20px; 
+    outline: 2px solid #000;
+   }
+   div {
+    width: 400px;	
+    height: 480px;
+    background: #ffd9b3; /* Цвет фона */
+   }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+<body bgcolor="#ffd9b3" background="bk.jpg">
+<center>
+<div bgcolor="#ffd9b3" width=600px height=400px>
+<h2>
+Книжная полка
+</h2>
+<h4>Что почитать?</h4>
+<textarea class = "inser" id="bookRead"></textarea>
+<p><input type="radio" value="one" name="r1" checked>Одну книгу</p>
+<p><input type="radio" value="list" name="r1"> Список книг</p>
+<p><input type="button" value="Искать" onclick="readBook()"></p>
+<h4>Добавить книгу на полку:</h4>
+<input class = "book" id="addBook" onchange="addBook()">
+<p><input type="button" value="Добавить"></p>
+<!-- <h4>Сжечь последнюю книгу:</h4>
+<p><input type="button" value="Удалить" onclick="deleteBook()"></p>
+</div> -->
+<center>
+</body>
+</html>

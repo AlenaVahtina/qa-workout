@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "f07fc8dc-f5d8-44b0-8dc9-14d853da7469",
+		"name": "book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/book",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/book",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"author\":\"test\",\n\"name\":\"test\",\n\"id\":\"1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\n{\n\"author\":\"test\",\n\"name\":\"test\",\n\"id\":\"1\"\n},\n{\n\"author\":\"test2\",\n\"name\":\"test2\",\n\"id\":\"2\"\n}\n]"
+				}
+			]
+		},
+		{
+			"name": "book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/book",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/book",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		},
+		{
+			"name": "book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/book",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/book",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				},
+				{
+					"name": "book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"test\":\"test\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/book",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "OK"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
